@@ -64,4 +64,5 @@ public interface IRepository : ITarget, IReferenceFetchable, IReferencePushable,
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
     IAsyncEnumerable<Descriptor> FetchReferrersAsync(Descriptor descriptor, string? artifactType, CancellationToken cancellationToken = default);
+
 }
